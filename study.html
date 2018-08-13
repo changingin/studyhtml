@@ -16,6 +16,7 @@
 
 <body>
   <h1> Let's study HTML</h1>
+  <h2> browser </h2>
   
 <p>
 The purpose of a web browser (Chrome, IE, Firefox, Safari) is to read HTML documents and display them.<br>
@@ -25,6 +26,7 @@ The browser does not display the HTML tags, but uses them to determine how to di
 Only the content inside the [body] section is displayed in a browser.<br>
   </p>
   
+  <h2> html and [tag] </h2>
   </ul>
 
   <li>All HTML documents must start with a document type declaration: [!DOCTYPE html].</li>
@@ -66,14 +68,17 @@ example : [button] Click me [/button] <br> <br>
 [/ol] <br><br>
   
      HTML elements with no content are called empty elements. <br>
-    Empty elements do not have an end tag, such as the （br) element <br>
+    Empty elements do not have an end tag, such as the [br] element <br>
     (which indicates a line break).    <br><br>
+  
+  
   <li>Attributes provide additional information about HTML elements.</li>
  </ul>
 
     
-    <p>
-<h5>HTML Attributes </h5>
+ 
+<h2>HTML Attributes </h2>
+<p>
 <ol>
 <li>All HTML elements can have attributes</li>
 <li> Attributes provide additional information about an element</li>  
@@ -84,12 +89,58 @@ example : [button] Click me [/button] <br> <br>
 
 
 <ul>
-<li>All HTML elements can have attributes</li>
+<li> All HTML elements can have attributes</li>
 <li> Attributes provide additional information about an element</li>  
 <li>  Attributes are always specified in the start tag</li>
 <li>  Attributes usually come in name/value pairs like: name="value"</li>    
 </ul> 
 
+<ul>
+  <li> </li>
+  
+  <li>HTML links are defined with the <a> tag. <br> The link address is specified in the "href" attribute: </li><br>
+    example: <br>
+    [a href="www.google.com"] This is a link [/a] <br><br>
+                                                                                                                 
+  <li> HTML images are defined with the [img] tag. <br>
+
+The file name of the image source is specified in the "src" attribute: </li>
+   <li> Images in HTML have a set of size attributes, which specifies the "width" and "height" of the image:</li><br>
+  example: <br>
+  [img src=" 1.jpg" width="50" height="60"] <br>
+  The image size is specified in pixels: width="50" means 50 pixels wide.<br><br>
+ 
+  <li> The "alt" attribute specifies an alternative text to be used, when an image cannot be displayed.<br>
+    The "alt"      attribute is also useful if the image does not exist:<br>
+
+The value of the attribute can be read by screen readers.</li><br>
+  example:<br>
+  [img src="1.jpg" alt="seoul city"]<br><br>
+  <li> The "style" attribute is used to specify the styling of an element, like color, font, size etc.</li><br>
+  example:<br>
+  [p style="color:red"]I am a paragraph.[/p]<br><br>
+  
+  <li> The language of the document can be declared in the [html] tag.<br>
+
+The language is declared with the "lang" attribute.
+
+Declaring a language is important for accessibility applications (screen readers) and search engines:<br>
+  The first two letters specify the language.
+  </li><br>
+  example:<br>
+    [html lang="ko"]<br> <br> 
+  <li>Here, a title attribute is added to the [p] element.<br>
+    The value of the "title" attribute will be displayed as a tooltip when you mouse over the paragraph: </li><br>
+  example:<br>
+  [h2 title="I'm a header"] The title Attribute  [/h2]<br><br>
+  
+[p title="I'm a tooltip"] Mouse over this paragraph, to display the title attribute as a tooltip. [/p] <br><br>
+  
+  
+  <li> </li>
+  
+  
+</ul>
 
 </body>
 
