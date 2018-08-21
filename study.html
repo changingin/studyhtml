@@ -874,24 +874,72 @@ example2:
   <li>  The class Attribute  </li>
   <pre>
   To define a style for special types of elements, add a "class" attribute to the element:
+  then define a style for the elements with the specific class:
+  
+  
+  example1：
+  
+  【p class="good"】 I am different【/p】
+  
+  example2:
+  
+  [style]
+   .good {
+       color: red;
+       font-size:40px
+     }
+  [/style]
   
   
   </pre>
   
   
   
-  <li>    </li>
+  <li>   External References  </li>
   <pre>
-  
+ 
+External style sheets can be referenced with a full URL or with a path relative to the current web page.
+1. This example uses a full URL to link to a style sheet:
+
+[head]
+  [link rel="stylesheet" href="https://www.w3schools.com/html/styles.css"]
+[/head]
+
+
+
+2. This example links to a style sheet located in the html folder on the current web site:
+
+[head]
+  [link rel="stylesheet" href="/html/styles.css"]
+[/head]
+
+
+
+3. This example links to a style sheet located in the same folder as the current page:
+
+[head]
+  [link rel="stylesheet" href="styles.css"]
+[/head]
+
   </pre>
   
   
   
   
   
-  <li>    </li>
+  <li>  Chapter Summary  </li>
   <pre>
   
+Use the HTML "style" attribute for inline styling
+Use the HTML [style] element to define internal CSS
+Use the HTML [link] element to refer to an external CSS file
+Use the HTML [head] element to store [style] and [link] elements
+Use the CSS (color) property for text colors
+Use the CSS (font-family) property for text fonts
+Use the CSS (font-size) property for text sizes
+Use the CSS (border) property for borders
+Use the CSS (padding) property for space inside the border
+Use the CSS (margin) property for space outside the border
   </pre>
   
   
@@ -913,7 +961,7 @@ example2:
   
 
 
-<h2>   </h2>
+<h2> HTML Links </h2>
 
 <ul>
   <li>    </li>
