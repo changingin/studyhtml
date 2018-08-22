@@ -1017,9 +1017,50 @@ Use the CSS (margin) property for space outside the border
   
   
   
-   <li>    </li>
+   <li>  HTML Link Colors  </li>
   <pre>
+  By default, a link will appear like this (in all browsers):
+
+  1. An unvisited link is underlined and powderblue
+  2. A visited link is underlined and hotpink
+  3. An active link is underlined and green
+  You can change the default colors, by using CSS:
   
+  
+  
+  example:
+  
+[head]
+[style]
+a:link {
+    color: powderblue;
+    background-color: transparent;
+    text-decoration: underlined;
+}
+a:visited {
+    color: hotpink;
+    background-color: transparent;
+    text-decoration:  underlined;
+}
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: green;
+    background-color: transparent;
+    text-decoration: underline;
+}
+[/style]
+[/head]
+
+[body]
+
+[a href="https://www.google.com" target="blank]   link to google   [/a]
+
+
+
   </pre>
   
   
@@ -1031,9 +1072,48 @@ Use the CSS (margin) property for space outside the border
   
   
   
-   <li>    </li>
+   <li>  HTML Links - The target Attribute  </li>
   <pre>
+  The "target" attribute specifies where to open the linked document.
+  The "target" attribute can have one of the following values:
+
+1.  _blank - Opens the linked document in a new window or tab
+2.  _self - Opens the linked document in the same window/tab as it was clicked (this is default)
+3.  _parent - Opens the linked document in the parent frame
+4.  _top - Opens the linked document in the full body of the window
+5.  framename - Opens the linked document in a named frame
+
+
+This example will open the linked document in a new browser window/tab:
+
+[a href="https://www.google.com" target="_blank"]      Visit  Google!   [/a]
+
+Tip: If your webpage is locked in a frame, you can use (target="_top") to break out of the frame:
+ [a href="https://www.google.com" target="_top"]  Click here!  [/a]
+
+  </pre>
   
+  
+    
+  
+  
+  
+  
+  
+  
+  
+  
+   <li> HTML Links - Image as Link   </li>
+  <pre>
+  It is common to use images as links:
+  
+  example:
+   [a href="https://dict.naver.com/"]
+  [img src="smiley.gif" alt="naver dictionary" style="width:42px;height:42px;border:0"]
+    [/a]
+    
+    Note: border:0; is added to prevent IE9 (and earlier) from displaying a border around the image (when the image is a link).
+    
   </pre>
   
   
@@ -1048,7 +1128,22 @@ Use the CSS (margin) property for space outside the border
   
   
   
-   <li>    </li>
+  
+  
+   <li>  Link Titles  </li>
+  <pre>
+  The  "title" attribute specifies extra information about an element. 
+  The information is most often shown as a tooltip text when the mouse moves over the element.
+
+  Example:
+  [a href="https://www.google.com" title="Go to google">  Visit google   [/a]
+  </pre>
+  
+  
+  
+  
+  
+  <li>    </li>
   <pre>
   
   </pre>
@@ -1058,16 +1153,27 @@ Use the CSS (margin) property for space outside the border
   
   
   
+  <li>    </li>
+  <pre>
+  
+  </pre>
   
   
   
   
   
   
+  <li>    </li>
+  <pre>
+  
+  </pre>
   
   
   
-   <li>    </li>
+  
+  
+  
+  <li>    </li>
   <pre>
   
   </pre>
