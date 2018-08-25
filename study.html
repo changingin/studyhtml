@@ -33,7 +33,15 @@
                                                     }     
          ">
                                                  
-  
+   <input id="hot" type="button" value="粉紅" onclick="
+    if(document.querySelector('#hot').value === '粉紅'){
+      document.querySelector('body').style.backgroundColor = 'hotpink';
+      document.querySelector('#hot').value = '天藍';
+    } else {
+      document.querySelector('body').style.backgroundColor = 'powderblue';
+      document.querySelector('#hot').value = '粉紅';
+    }
+  ">
   
   <h2> browser </h2>
   
