@@ -1208,12 +1208,150 @@ Example:
 <h2> HTML Images  </h2>
 
 <ul>
+  <li>  HTML Images Syntax  </li>
+  <pre>
+  
+  In HTML, images are defined with the [img] tag.
+  The [img] tag is empty, it contains attributes only, and does not have a closing tag.
+  The "src" attribute specifies the URL (web address) of the image:
+
+ example: 
+ [img src="url"]
+ 
+  </pre>
+  
+  
+  
+  <li>  The "alt" Attribute  </li>
+  <pre>
+  
+The "alt" attribute provides an alternate text for an image, 
+if the user for some reason cannot view it 
+(because of slow connection, an error in the src attribute, or if the user uses a screen reader).
+The value of the "alt" attribute should describe the image:
+
+
+example:
+[img src="1.jpg" alt="(text)" ]
+
+
+If a browser cannot find an image, it will display the value of the "alt" attribute:
+Note: The "alt" attribute is required. A web page will not validate correctly without it.
+  </pre>
+  
+  
+  
+  
+  
+  <li>  Image Size - Width and Height   </li>
+  <pre>
+  1: You can use the "style" attribute to specify the width and height of an image.
+  
+  example1:
+  [img src="1.jpg" alt="text" style="width: 1px;  height: 1px;"]
+  
+  
+  2: Alternatively, you can use the "width" and "height" attributes:
+
+  example2:
+  [img src="1.jpg" alt="text" width="1" height="1"]
+  
+  
+  The "width" and "height" attributes always defines the width and height of the image in pixels.
+  Note: Always specify the width and height of an image. 
+    If width and height are not specified, the page might flicker while the image loads.
+  
+
+  
+  </pre>
+  
+  
+  
+  
+  
+  
+  <li>  Width and Height, or Style?  </li>
+  <pre>
+  The "width", "height", and "style" attributes are valid in HTML5.
+  However, we suggest using the style attribute. It prevents styles sheets from changing the size of images:
+  
+  "width", "height" attributes는 [style]에 의해 바뀐다.
+  
+  
+  </pre>
+  
+  
+  
+  
+  <li>  Animated Images  </li>
+  <pre>
+  HTML allows animated GIFs:
+
+   Example:
+  [img src="1.gif" alt="text" style="width:1px;  height:1px;"]
+  
+  </pre>
+  
+  
+  
+  
+  
+  
+  <li>  Image Floating   </li>
+  <pre>
+  Use the CSS float property to let the image float to the right or to the left of a text:
+  
+  
+  example:
+  [img src="1.gif" alt="text" style="float:right;  width:1px;  height:1px;"]
+  </pre>
+  
+  
+  
+  
+  
+  
+  
+  <li>  Image Maps  </li>
+  <pre>
+  
+  </pre>
+  
+  
+  
+  
+  
+  
+  
+  
   <li>    </li>
   <pre>
   
   </pre>
   
   
+  
+  
+  
+  
+  
+  
+  <li>    </li>
+  <pre>
+  
+  </pre>
+  
+  
+  
+  
+  
+  
+  
+  
+  <li>    </li>
+  <pre>
+  
+  </pre>
 </ul>
 <hr>
 
