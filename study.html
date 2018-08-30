@@ -1315,6 +1315,47 @@ Note: The "alt" attribute is required. A web page will not validate correctly wi
   
   <li>  Image Maps  </li>
   <pre>
+  The ,map, tag defines an image-map.
+  An image-map is an image with clickable areas.
+  
+  example:
+,,img src="x.jpg" alt=" x" usemap="#x" width="100" height="100",,
+
+,,map name="x",,
+  ,,area shape="rect" coords="34,44,270,350" alt="a" href="a.html",,
+  ,,area shape="rect" coords="290,172,333,250" alt="b" href="b.html",,
+  ,,area shape="circle" coords="337,300,44" alt="c" href="c.html",,
+,,/map,,
+
+
+
+The "name" attribute of the ^map^ tag is associated with 
+the ^img^'s "usemap" attribute and creates a relationship 
+between the image and the map.
+
+The ^map> element contains a number of ^area> tags,
+that define the clickable areas in the image-map
+
+  </pre>
+  
+  
+  
+  
+  
+  
+  
+  
+  <li> Background Image   </li>
+  <pre>
+  To add a background image on an HTML element, 
+  use the CSS property "background-image: "
+  
+  
+  example1:
+  ^body style="background-image:url('x.jpg')">
+  
+  example2:
+  ^p style="background-image:url('x.jpg')">
   
   </pre>
   
@@ -1325,9 +1366,19 @@ Note: The "alt" attribute is required. A web page will not validate correctly wi
   
   
   
-  <li>    </li>
+  <li> Chapter Summary   </li>
   <pre>
   
+Use the HTML ^img> element to define an image
+Use the HTML "src" attribute to define the URL of the image
+Use the HTML "alt" attribute to define an alternate text for an image, if it cannot be displayed
+Use the HTML "width" and "height" attributes to define the size of the image
+Use the CSS (width:) and (height:) properties to define the size of the image (alternatively)
+Use the CSS (float:) property to let the image float
+Use the HTML ^map> element to define an image-map
+Use the HTML ^area> element to define the clickable areas in the image-map
+Use the HTML ^img>'s element usemap attribute to point to an image-map
+Use the HTML ^picture> element to show different images for different devices
   </pre>
   
   
@@ -1335,24 +1386,7 @@ Note: The "alt" attribute is required. A web page will not validate correctly wi
   
   
   
-  
-  
-  <li>    </li>
-  <pre>
-  
-  </pre>
-  
-  
-  
-  
-  
-  
-  
-  
-  <li>    </li>
-  <pre>
-  
-  </pre>
+
 </ul>
 <hr>
 
