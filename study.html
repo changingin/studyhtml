@@ -22,13 +22,14 @@
   
  
                                                  
-   <input id="hot" type="button" value="粉紅" onclick="
-    if(document.querySelector('#hot').value === '粉紅'){
-      document.querySelector('body').style.backgroundColor = 'hotpink';
-      document.querySelector('#hot').value = '天藍';
+   <input type="button" value="粉紅" onclick="
+    var target = document.querySelector('body')
+    if(this.value === '粉紅'){
+      target.style.backgroundColor = 'hotpink';
+      this.value = '天藍';
     } else {
-      document.querySelector('body').style.backgroundColor = 'powderblue';
-      document.querySelector('#hot').value = '粉紅';
+      target.style.backgroundColor = 'powderblue';
+      this.value = '粉紅';
     }
   ">
   
