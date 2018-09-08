@@ -1419,7 +1419,7 @@ example:
   [tr]
     [td] smith   [/td]
     [td] Han     [/td]
-    [td] 94      [/td]
+    [td] 14      [/td]
   [/tr]
 
 [/table]
@@ -1614,7 +1614,43 @@ example:
   
   <li>  HTML Table - Cells that Span Many Rows  </li>
   <pre>
+  To make a cell span more than one row, 
+  use the <u>rowspan="(numbers)"</u> attribute:
   
+  
+example:
+  [table]
+    [tr]
+      [th]   이름        [/th]
+      [td]   피터        [/td]
+    [/tr]
+    
+    [tr]
+      [th rowspan="2"]  전화번호         [/th]
+      [td]              010-1234-5678   [/td]
+    [/tr]
+    
+    [tr]
+      [td]    0912-345-678    [/td]
+    [/tr]
+    
+[/table]
+
+result:
+<table >
+  <tr>
+    <th>이름</th>
+    <td>피터</td>
+  </tr>
+  <tr>
+    <th rowspan="2">전화번호  </th>
+    <td> 010-1234-5678</td>
+  </tr>
+  <tr>
+    <td>0912-345-678</td>
+  </tr>
+</table>
+
   </pre>
   
   
