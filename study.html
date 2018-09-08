@@ -1319,21 +1319,21 @@ Note: The "alt" attribute is required. A web page will not validate correctly wi
   An image-map is an image with clickable areas.
   
   example:
-,,img src="x.jpg" alt=" x" usemap="#x" width="100" height="100",,
+[img src="x.jpg" alt=" x" usemap="#x" width="100" height="100"]
 
-,,map name="x",,
-  ,,area shape="rect" coords="34,44,270,350" alt="a" href="a.html",,
-  ,,area shape="rect" coords="290,172,333,250" alt="b" href="b.html",,
-  ,,area shape="circle" coords="337,300,44" alt="c" href="c.html",,
-,,/map,,
+[map name="x"]
+  [area shape="rect" coords="34,44,270,350" alt="a" href="a.html"]
+  [area shape="rect" coords="290,172,333,250" alt="b" href="b.html"]
+  [area shape="circle" coords="337,300,44" alt="c" href="c.html"]
+[/map]
 
 
 
-The "name" attribute of the ^map^ tag is associated with 
-the ^img^'s "usemap" attribute and creates a relationship 
+The "name" attribute of the [map] tag is associated with 
+the [img]'s "usemap" attribute and creates a relationship 
 between the image and the map.
 
-The ^map> element contains a number of ^area> tags,
+The [map] element contains a number of [area] tags,
 that define the clickable areas in the image-map
 
   </pre>
@@ -1352,10 +1352,10 @@ that define the clickable areas in the image-map
   
   
   example1:
-  ^body style="background-image:url('x.jpg')">
+  [body style="background-image:url('x.jpg')"]
   
   example2:
-  ^p style="background-image:url('x.jpg')">
+  [p style="background-image:url('x.jpg')"]
   
   </pre>
   
@@ -1369,16 +1369,173 @@ that define the clickable areas in the image-map
   <li> Chapter Summary   </li>
   <pre>
   
-Use the HTML ^img> element to define an image
+Use the HTML [img] element to define an image
 Use the HTML "src" attribute to define the URL of the image
 Use the HTML "alt" attribute to define an alternate text for an image, if it cannot be displayed
 Use the HTML "width" and "height" attributes to define the size of the image
 Use the CSS (width:) and (height:) properties to define the size of the image (alternatively)
 Use the CSS (float:) property to let the image float
-Use the HTML ^map> element to define an image-map
-Use the HTML ^area> element to define the clickable areas in the image-map
-Use the HTML ^img>'s element usemap attribute to point to an image-map
-Use the HTML ^picture> element to show different images for different devices
+Use the HTML [map] element to define an image-map
+Use the HTML [area] element to define the clickable areas in the image-map
+Use the HTML [img]'s element usemap attribute to point to an image-map
+Use the HTML [picture] element to show different images for different devices
+  </pre>
+  
+ 
+</ul>
+<hr>
+
+
+
+<h2> HTML Tables  </h2>
+
+<ul>
+  <li>   Defining an HTML Table  </li>
+  <pre>
+ 
+An HTML table is defined with the [table] tag.
+Each table row is defined with the [tr] tag. 
+A table header is defined with the [th] tag. (By default, table headings are bold and centered.)
+A table data/cell is defined with the [td] tag.
+
+example:
+[table style="width:50%"]
+  [tr]
+    [th] Firstname [/th]
+    [th] Lastname  [/th] 
+    [th] Age       [/th]
+  [/tr]
+  
+  [tr]
+    [td] peter  [/td]
+    [td] Han    [/td]
+    [td] 20     [/td]
+  [/tr]
+  
+  [tr]
+    [td] smith   [/td]
+    [td] Han     [/td]
+    [td] 94      [/td]
+  [/tr]
+
+[/table]
+
+result:
+<table style="width:50%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>peter</td>
+    <td>Han</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>smith</td>
+    <td>Han</td>
+    <td>94</td>
+  </tr>
+
+</table>
+
+
+
+Note: The [td] elements are the data containers of the table.
+They can contain all sorts of HTML elements; text, images, lists, other tables, etc.
+  </pre>
+  
+  
+  
+  <li>  HTML Table - Adding a Border  </li>
+  <pre>
+  If you do not specify a border for the table, 
+  it will be displayed without borders.
+  A border is set using the CSS "border:1px solid color;" property:
+  
+  example:
+  [head]
+[style]
+table, th, td {
+      border: 1px solid black;
+   }
+[/style]
+[/head]
+
+
+Remember to define borders for both the <u>table</u> and the <u>table cells</u>.
+  </pre>
+  
+  
+  
+  
+  <li>  HTML Table - Collapsed Borders  </li>
+  <pre>
+  If you want the borders to collapse into one border, 
+  add the CSS "border-collapse:collapse;" property:
+  
+  example:
+  [style]
+    table, th, td {
+       border: 1px solid black;
+       border-collapse: collapse;
+    }
+  [/style]
+  
+  </pre>
+  
+  
+  
+  
+  <li> HTML Table - Adding Cell Padding   </li>
+  <pre>
+  Cell padding specifies <u>the space between the cell content and its borders</u>.
+  If you do not specify a padding, the table cells will be displayed without padding.
+  To set the padding, use the CSS " padding: 1px ;" property:
+  
+  example:
+  [style]
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+          }
+    th, td {
+        padding: 10px;
+          }
+  [/style]
+  
+  
+  </pre>
+  
+  
+  
+  
+  
+  <li>  HTML Table - Left-align Headings  </li>
+  <pre>
+  By default, table headings are bold and centered.
+  To left-align the table headings,
+  use the CSS "text-align" property:
+  
+  
+example:
+  [style]
+    table, th, td {
+       border: 1px solid black;
+        border-collapse: collapse;
+      }
+    th, td {
+       padding: 5px;
+       text-align: left;   or <u>right;</u>  or  <u>center;</u>
+      }
+
+  [/style]
+  
+  
+  
+  
+  
   </pre>
   
   
@@ -1386,13 +1543,111 @@ Use the HTML ^picture> element to show different images for different devices
   
   
   
+  <li>  HTML Table - Adding Border Spacing  </li>
+  <pre>
+  Border spacing specifies <u>the space between the cells</u>.
+  To set the border spacing for a table, 
+  use the CSS "border-spacing: ;" property:
+  
+example:
+  [style]
+    table, th, td {
+       border: 1px solid black;
+       padding: 5px;
+   }
+    table {
+       border-spacing: 15px;
+   }
+  [/style]
 
+
+ Note: If the table has collapsed borders, border-spacing has no effect.
+  </pre>
+  
+  
+  
+  
+  <li>  HTML Table - Cells that Span Many Columns  </li>
+  <pre>
+  
+  To make a cell span more than one column, 
+  use the <u>colspan="(numbers)"</u> attribute:
+  
+  
+example:
+  [table]
+   [tr]
+     [th]               이름      [/th]
+      [th colspan="2"]  전화번호  [/th]
+   [/tr]
+   
+   [tr]
+      [td]   피터            [/td]
+      [td]   0912-345-678   [/td]
+      [td]   010-1234-5678  [/td]
+   [/tr]
+  [/table]
+  
+  
+  result:
+  <table>
+  <tr>
+    <th>이름</th>
+    <th colspan="2">전화번호</th>
+  </tr>
+  <tr>
+    <td>피터 </td>
+    <td>0912-345-678</td>
+    <td>010-1234-5678</td>
+  </tr>
+</table>
+
+
+  </pre>
+  
+  
+  
+  
+  <li>  HTML Table - Cells that Span Many Rows  </li>
+  <pre>
+  
+  </pre>
+  
+  
+  
+  
+  
+  
+  <li>    </li>
+  <pre>
+  
+  </pre>
+  
+  
+  
+  
+  
+  
+  <li>    </li>
+  <pre>
+  
+  </pre>
+  
+  
+  
+  
+  
+  <li>    </li>
+  <pre>
+  
+  </pre>
+  
+  
+  
+  
+  
 </ul>
 <hr>
-
-
-
-
 
 
 
