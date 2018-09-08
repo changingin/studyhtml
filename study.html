@@ -1660,7 +1660,52 @@ result:
   
   <li>   HTML Table - Adding a Caption  </li>
   <pre>
+  To add a caption to a table, 
+  use the [caption] tag:
   
+  Note: The [caption] tag must be inserted immediately after the [table] tag.
+  
+  
+
+ example:
+ [table]
+ 
+  [caption]  Monthly savings  [/caption]
+  
+  [tr]
+    [th]  Month     [/th]
+    [th]  Savings   [/th]
+  [/tr]
+  
+  [tr]
+    [td]    January     [/td]
+    [td]    $100        [/td]
+  [/tr]
+  
+  [tr]
+    [td]    February    [/td]
+    [td]    $50         [/td]
+  [/tr]
+  
+[/table]
+  
+  
+ result:
+  <table>
+  <caption>Monthly savings</caption>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$50</td>
+  </tr>
+</table>
   </pre>
   
   
@@ -1668,8 +1713,29 @@ result:
   
   
   
-  <li>    </li>
+  <li>   A Special Style for One Table  </li>
   <pre>
+  To define a special style for a special table, 
+  add an id attribute to the table:
+  
+  ex)  [tag-name  id ="(id-name)"]
+  
+example:
+
+ [head]
+  [style]
+    #pit {
+         background-color: white;
+         }
+   [/style]
+ [/head]
+ 
+ 
+ [body]  
+ 
+  [table id="pit"]
+  
+ [/body] 
   
   </pre>
   
@@ -1677,9 +1743,21 @@ result:
   
   
   
-  <li>    </li>
+  <li> Chapter Summary   </li>
   <pre>
-  
+  Use the HTML [table] element to define a table
+  Use the HTML [tr] element to define a table row
+  Use the HTML [td] element to define a table data
+  Use the HTML [th] element to define a table heading
+  Use the HTML [caption] element to define a table caption
+  Use the CSS <u>border: ;</u>property to define a border
+  Use the CSS <u>border-collapse: ;</u>property to collapse cell borders
+  Use the CSS <u>padding: ;</u>property to add padding to cells
+  Use the CSS <u>text-align: ;</u>property to align cell text
+  Use the CSS <u>border-spacing: ;</u>property to set the spacing between cells
+  Use the <u>colspan="(numbers)"</u>attribute to make a cell span many columns
+  Use the <u>rowspan="(numbers)" </u>attribute to make a cell span many rows
+  Use the <u>id="(id-name)" </u>attribute to uniquely define one table
   </pre>
   
   
