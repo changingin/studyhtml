@@ -1916,8 +1916,9 @@ type="i"	; The list items will be numbered with lowercase roman numbers
   
 
 
-  <head>
-<style>
+
+  [head]
+[style]
 ul {
     list-style-type: none;
     margin: 0;
@@ -1928,7 +1929,7 @@ ul {
 
 li {
     float: left;
-}
+}]
 
 li a {
     display: block;
@@ -1941,39 +1942,47 @@ li a {
 li a:hover {
     background-color: #111111;
 }
-</style>
-</head>
-<body>
+[
+[/style]
+[/head]
+[body]
 
-<h2>Navigation Menu</h2>
-<p>In this example, we use CSS to style the list horizontally, to create a navigation menu:</p>
+[h2]Navigation Menu[/h2]
+[p]In this example, we use CSS to style the list horizontally, to create a navigation menu:[/p]
 
-<ul>
-  <li><a href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
-</ul>
+[ul]
+  [li][a href="#home"]Home[/a][/li]
+  [li][a href="#news"]News[/a][/li]
+  [li][a href="#contact"]Contact[/a][/li]
+[li][a href="#about"]About[/a][/li]
+[/ul]
 
-</body>
+[/body]
+
+
+
   </pre>
   
   
   
   
-   <li>    </li>
-  <pre>
+   <li> Chapter Summary</li>
+ <pre>   
+ 
+Use the HTML [ul] element to define an unordered list
+Use the CSS "list-style-type" property to define the list item marker
+Use the HTML [ol] element to define an ordered list
+Use the HTML "type" attribute to define the numbering type
+Use the HTML [li] element to define a list item
+Use the HTML [dl] element to define a description list
+Use the HTML [dt] element to define the description term
+Use the HTML [dd] element to describe the term in a description list
+Lists can be nested inside lists
+List items can contain other HTML elements
+Use the CSS property "float:left" or "display:inline" to display a list horizontally   
+ 
   
   </pre>
-  
-  
-  
-  
-  
-   <li>    </li>
-  <pre>
-  
-  </pre>  
   
   
 </ul>
