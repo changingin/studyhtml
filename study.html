@@ -2094,6 +2094,89 @@ Block level elements in HTML:
 </ul>
 <hr>
 
+  
+  <h2>  HTML The class Attribute </h2>
+
+<ul>
+  <li> Using The class Attribute   </li>
+  <pre>
+  The "class" attribute specifies one or more class names for an HTML element.
+  The class name can be used by CSS and JavaScript 
+   to perform certain tasks for elements with the specified class name.
+  In CSS, to select elements with a specific class, write a period (.) character, 
+   followed by the name of the class:
+   
+   Tip: The class attribute can be used on any HTML element.
+   Note: The class name is case sensitive!
+  
+  
+  example:
+  Use CSS to style all elements with the class name "city":
+  
+  [style]
+    .city {
+      background-color: tomato;
+      color: white;
+      padding: 10px;
+     }
+  [/style]
+
+  [h2 class="city"]   London   [/h2] 
+
+
+  </pre>
+  
+  
+  
+   <li>  Using The class Attribute in JavaScript  </li>
+  <pre>
+  JavaScript can access elements with a specified class name by using the 
+   ' getElementsByClassName() ' method:
+   
+   
+   Example:
+   When a user clicks on a button, hide all elements with the class name "city":
+   
+   
+   
+   
+   [button onclick="myFunction()"]   Hide elements  [/button]
+
+    [h2 class="city"]   London    [/h2]
+    [p]  London is the capital of England.  [/p]
+
+
+    [script]
+      function myFunction() {
+        var x = document.getElementsByClassName("city");
+        for (var i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";
+                 }
+              }
+    [/script]
+    
+  </pre>
+  
+  
+  
+  
+  
+   <li>  Multiple Classes  </li>
+  <pre>
+  
+  </pre>
+  
+  
+  
+  
+   <li>  Same Class, Different Tag  </li>
+  <pre>
+  
+  </pre>
+  
+
+</ul>
+<hr>
 
 
 
