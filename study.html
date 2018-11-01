@@ -2163,7 +2163,32 @@ Block level elements in HTML:
   
    <li>  Multiple Classes  </li>
   <pre>
+  HTML elements can have more than one class name, each class name must be separated by a space.
   
+  
+  
+ [style]
+.city {
+    background-color: tomato;
+    color: white;
+    padding: 10px;
+} 
+
+.main {
+    text-align: center;
+}
+ [/style]
+
+
+
+[h2 class="city main"]  London  [/h2]
+[h2 class="city"]       Paris   [/h2]
+[h2 class="city"]       Tokyo   [/h2]
+
+
+In the example above, the first [h2] element belongs to both the "city" class and the "main" class.
+
+
   </pre>
   
   
@@ -2171,16 +2196,61 @@ Block level elements in HTML:
   
    <li>  Same Class, Different Tag  </li>
   <pre>
+  Different Tags Can Share Same Class: 
+  Different tags, like [h2] and [p], can have the same class name and thereby share the same style:
+  
+  .city {
+    background-color: tomato;
+    color: white;
+    padding: 10px;
+   } 
+  
+  [h2 class="city"]  Paris  [/h2]
+  [p class="city"]  Paris is the capital of France. [/p]
   
   </pre>
   
+
+
+
+
+
 
 </ul>
 <hr>
 
 
 
+<h2> HTML The id Attribute  </h2>
 
+<ul>
+  <li>  Using The id Attribute  </li>
+  <pre>
+  
+  </pre>
+  
+  
+  
+  <li>  Difference Between Class and ID  </li>
+  <pre>
+  
+  </pre>
+  
+  
+  
+  
+  
+  <li>  Bookmarks with ID and Links  </li>
+  <pre>
+  
+  </pre>
+  
+  
+  
+  
+  
+</ul>
+<hr>
 
 
 
